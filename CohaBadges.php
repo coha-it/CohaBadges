@@ -16,26 +16,48 @@ class CohaBadges extends Plugin
 
     public function getAttributes()
     {
-        $sTmpHelpText = 'For Example (without quotation Marks) "primary" "secondary" "grey" "blue" "green" "red" "yellow" "purple" "orange" "gold" or Color like "#421188"';
+        $sSubinfo = 'For Example (without quotation Marks) Colors like "#421188", or words like "primary" "secondary" "gray" "golden" "gold" "info" "notice" "success" "positive" "error" "warning" "blue" "green" "red" "yellow" "purple" "orange" "gold"';
         // Return the Attributes as Array
         return [
-            [ 'name' => 'coha_badges_1_text',                      'type' => 'string',             'label' => 'Badged 1: Text', ],
-            [ 'name' => 'coha_badges_1_color',                     'type' => 'string',             'label' => 'Badged 1: Color', 'helpText' => 'For Example (without quotation Marks) "primary" "secondary" "grey" "blue" "green" "red" "yellow" "purple" "orange" "gold" or Color like "#421188"' ],
+            [ 'name' => 'coha_badges_1_active',                    'type' => 'boolean',             'label' => 'Badge 1', ],
+            [ 'name' => 'coha_badges_1_text',                      'type' => 'string',             'label' => 'Badge 1: Text', ],
+            [ 'name' => 'coha_badges_1_color',                     'type' => 'string',             'label' => 'Badge 1: Color', 'supportText' => $sSubinfo ],
             
-            [ 'name' => 'coha_badges_2_text',                      'type' => 'string',             'label' => 'Badged 2: Text', ],
-            [ 'name' => 'coha_badges_2_color',                     'type' => 'string',             'label' => 'Badged 2: Color', 'helpText' => $sTmpHelpText ],
+            [ 'name' => 'coha_badges_2_active',                    'type' => 'boolean',             'label' => 'Badge 2', ],
+            [ 'name' => 'coha_badges_2_text',                      'type' => 'string',             'label' => 'Badge 2: Text', ],
+            [ 'name' => 'coha_badges_2_color',                     'type' => 'string',             'label' => 'Badge 2: Color', 'supportText' => $sSubinfo ],
 
-            [ 'name' => 'coha_badges_3_text',                      'type' => 'string',             'label' => 'Badged 3: Text', ],
-            [ 'name' => 'coha_badges_3_color',                     'type' => 'string',             'label' => 'Badged 3: Color', 'helpText' => $sTmpHelpText ],
+            [ 'name' => 'coha_badges_3_active',                    'type' => 'boolean',             'label' => 'Badge 3', ],
+            [ 'name' => 'coha_badges_3_text',                      'type' => 'string',             'label' => 'Badge 3: Text', ],
+            [ 'name' => 'coha_badges_3_color',                     'type' => 'string',             'label' => 'Badge 3: Color', 'supportText' => $sSubinfo ],
             
-            [ 'name' => 'coha_badges_4_text',                      'type' => 'string',             'label' => 'Badged 4: Text', ],
-            [ 'name' => 'coha_badges_4_color',                     'type' => 'string',             'label' => 'Badged 4: Color', 'helpText' => $sTmpHelpText ],
+            [ 'name' => 'coha_badges_4_active',                    'type' => 'boolean',             'label' => 'Badge 4', ],
+            [ 'name' => 'coha_badges_4_text',                      'type' => 'string',             'label' => 'Badge 4: Text', ],
+            [ 'name' => 'coha_badges_4_color',                     'type' => 'string',             'label' => 'Badge 4: Color', 'supportText' => $sSubinfo ],
             
-            [ 'name' => 'coha_badges_5_text',                      'type' => 'string',             'label' => 'Badged 5: Text', ],
-            [ 'name' => 'coha_badges_5_color',                     'type' => 'string',             'label' => 'Badged 5: Color', 'helpText' => $sTmpHelpText ],
+            [ 'name' => 'coha_badges_5_active',                    'type' => 'boolean',             'label' => 'Badge 5', ],
+            [ 'name' => 'coha_badges_5_text',                      'type' => 'string',             'label' => 'Badge 5: Text', ],
+            [ 'name' => 'coha_badges_5_color',                     'type' => 'string',             'label' => 'Badge 5: Color', 'supportText' => $sSubinfo ],
             
-            [ 'name' => 'coha_badges_6_text',                      'type' => 'string',             'label' => 'Badged 6: Text', ],
-            [ 'name' => 'coha_badges_6_color',                     'type' => 'string',             'label' => 'Badged 6: Color', 'helpText' => $sTmpHelpText ],
+            [ 'name' => 'coha_badges_6_active',                    'type' => 'boolean',             'label' => 'Badge 6', ],
+            [ 'name' => 'coha_badges_6_text',                      'type' => 'string',             'label' => 'Badge 6: Text', ],
+            [ 'name' => 'coha_badges_6_color',                     'type' => 'string',             'label' => 'Badge 6: Color', 'supportText' => $sSubinfo ],
+
+            [ 'name' => 'coha_badges_7_active',                    'type' => 'boolean',             'label' => 'Badge 7', ],
+            [ 'name' => 'coha_badges_7_text',                      'type' => 'string',             'label' => 'Badge 7: Text', ],
+            [ 'name' => 'coha_badges_7_color',                     'type' => 'string',             'label' => 'Badge 7: Color', 'supportText' => $sSubinfo ],
+
+            [ 'name' => 'coha_badges_8_active',                    'type' => 'boolean',             'label' => 'Badge 8', ],
+            [ 'name' => 'coha_badges_8_text',                      'type' => 'string',             'label' => 'Badge 8: Text', ],
+            [ 'name' => 'coha_badges_8_color',                     'type' => 'string',             'label' => 'Badge 8: Color', 'supportText' => $sSubinfo ],
+
+            [ 'name' => 'coha_badges_9_active',                    'type' => 'boolean',             'label' => 'Badge 9', ],
+            [ 'name' => 'coha_badges_9_text',                      'type' => 'string',             'label' => 'Badge 9: Text', ],
+            [ 'name' => 'coha_badges_9_color',                     'type' => 'string',             'label' => 'Badge 9: Color', 'supportText' => $sSubinfo ],
+
+            [ 'name' => 'coha_badges_10_active',                   'type' => 'boolean',             'label' => 'Badge 10', ],
+            [ 'name' => 'coha_badges_10_text',                     'type' => 'string',             'label' => 'Badge 10: Text', ],
+            [ 'name' => 'coha_badges_10_color',                    'type' => 'string',             'label' => 'Badge 10: Color', 'supportText' => $sSubinfo ],
         ];
     }
 
@@ -53,13 +75,12 @@ class CohaBadges extends Plugin
             $aAttribute = $aAttributes[$i];
 
             // Collect Advanced Array
-            $aAdvanced = [];
+            $aAdvanced = $aAttribute;
             $aAdvanced['label']                     = $aAttribute['label'] ?? '';
             $aAdvanced['translatable']              = $aAttribute['translatable'] ?? true;
             $aAdvanced['displayInBackend']          = $aAttribute['displayInBackend'] ?? true;
-            $aAdvanced['helpText']                  = $aAttribute['helpText'] ?? true;
             $aAdvanced['custom']                    = $aAttribute['custom'] ?? true;
-            $aAdvanced['position']                  = ($i + 75);
+            $aAdvanced['position']                  = ($i + 250);
 
             $service->update(
                 's_articles_attributes',
@@ -109,7 +130,7 @@ class CohaBadges extends Plugin
         return new LessDefinition(
             [],
             [
-                // __DIR__ . '/Resources/views/frontend/_public/src/less/quoteslider.less',
+                __DIR__ . '/Resources/views/frontend/_public/src/less/badges.less',
             ]
         );
     }

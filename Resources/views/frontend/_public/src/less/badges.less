@@ -1,0 +1,52 @@
+/*
+Product Badges
+==========================================
+Creates a corner product badge on a product-box.
+```
+<div class="product--box">
+    <div class="product--badges">
+        <div class="product--badge badge--discount">
+            <i class="icon--percent2"></i>
+        </div>
+    </div>
+</div>
+
+```
+*/
+.product--badges {
+
+    .product--badge {
+        
+        &.coha--badge {
+            color: #fff;
+            background-color: @gray-dark;
+        }
+
+        &.primary {
+            background-color: @brand-primary;
+        }
+        
+        &.secondary {
+            background-color: @brand-secondary;
+        }
+
+        &.info {
+            background-color: @highlight-info;
+        }
+
+        &.notice {
+            background-color: @highlight-notice;
+        }
+
+        &.success,
+        &.positive {
+            background-color: @highlight-success;
+        }
+
+        &.error,
+        &.warning {
+            background-color: @highlight-error;
+        }
+
+    }
+}
